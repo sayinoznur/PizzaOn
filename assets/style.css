@@ -1,0 +1,172 @@
+/* turuncu #fd9d3e */
+
+
+html{
+    font-size: 16px;
+}
+body{
+    background-image: url("../images/background.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 8rem;
+    display: table;
+    background-color: #fe0909;
+    padding: 30px;
+}
+header ul{
+    display: table-cell;
+    width: 70%;
+    text-align: right;
+   
+}
+header ul li{
+    display: inline;
+    list-style: none;
+    margin: 0rem 1rem;
+ 
+}
+header ul li a{
+    color: black;
+    font-size: 1.5rem;
+    
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+.pizza-order-app{
+    
+    width: 75rem;
+    margin: 4rem auto 0;
+}
+.pizza-order-app h1{
+    color: #fe0909;
+    text-align: center;
+}
+.pizza-order-app form{
+    background-color: white;
+    padding: 2rem 1rem;
+}
+.pizza-order-app form a{
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color:red ;
+    color: white;
+    padding: 0.5rem 1rem;
+
+}
+.pizza-order-app form a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+.pizza-order-app .pizza-types {
+    display: block;
+    font-size: 0;
+    width: 100%;
+}
+.pizza-order-app .pizza-types .pizza-type-item{
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 33.33%;
+    margin: 30px 0;
+    text-align: center;
+}
+.pizza-order-app .pizza-types .pizza-type-item img{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+
+}
+.pizza-order-app .pizza-types .pizza-type-item label,
+.pizza-order-app .pizza-types .pizza-type-item button{
+    display: block;
+    
+}
+.pizza-order-app .pizza-types .pizza-type-item button{
+    width: 5rem;
+    margin: auto;
+    border: none;
+    background-color: red;
+    color:white
+}
+.pizza-order-app .pizza-types .pizza-type-item button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+.select-size-form{
+    text-align: center;
+}
+.select-size-form label{
+    border: 2px solid red;
+    color: black;
+    padding: 0.5rem 1rem;
+    width: 20rem;
+}
+.select-size-form input[name="size"]{
+    display: none;
+}
+.select-size-form input[name="size"]:checked + label{
+    background-color: red;
+    color: black;
+}
+.select-dough-form{
+    text-align: center;
+}
+.select-dough-form label{
+    border: 2px solid red;
+    color: black;
+    padding: 0.5rem 1rem;
+    width: 20rem;
+}
+.select-dough-form input[name="dough"]{
+    display: none;
+}
+.select-dough-form input[name="dough"]:checked +label{
+    background-color: red;
+    color: black;
+    
+}
+.select-ekstra-form{
+    text-align: center;
+}
+.select-ekstra-form label{
+    border: 2px solid red;
+    color: black;
+    padding: 0.5rem 1rem;
+    width: 20rem;
+}
+.select-ekstra-form input[name="ekstra"]{
+    display: none;
+}
+.select-ekstra-form input[name="ekstra"]:checked +label{
+    background-color: red;
+    color: black;
+    
+}
+.pizza-order-app form .payment-label{
+    width: 10rem;
+   
+}
+.pizza-order-app .success-img{
+  display: block;
+  margin: auto;
+}
+button[role="button"]{
+    cursor: pointer;
+    border: none;
+    background-color:red ;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+button[role="button"]:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}

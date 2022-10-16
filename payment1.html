@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/reboot.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </header>
+    <section class="pizza-order-app">
+       
+        <form action="success.html">
+            <h1>Ödeme Sayfası</h1> 
+            <label for="fullname" class="payment-label">Ad Soyad</label>
+            <input 
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Adınız Soyadınız"
+              required
+             />
+             <br/>
+             <label for="email" class="payment-label">E-Posta</label>
+             <input 
+               type="text"
+               id="email"
+               name="email"
+               placeholder="abc@example.com"
+               required
+               />
+               <br/>
+               <label for="tel" class="payment-label">Telefon</label>
+               <input 
+                 type="tel"
+                 id="phone"
+                 name="phone"
+                 placeholder="905xxxxxxx"
+                 />
+                 
+                 <br/>
+                
+                 <label for="city" class="payment-label">Şehir</label>
+                 <select name="" id="city">
+                    <option value="istanbul">İstanbul</option>
+                    <option value="ankara">Ankara</option>
+                    <option value="izmir">Izmir</option>
+                    <option value="adana">Adana</option>
+                 </select>
+
+                 <br/>
+                 
+                 <label for="county" class="payment-label">İlçe</label>
+                 <select name="" id="county">
+                    <option value="umraniye">Umraniye</option>
+                    <option value="kadikoy">Kadıköy</option>
+                    <option value="sariyer">Sarıyer</option>
+                    <option value="uskudar">Üsküdar</option>
+                 </select>
+
+                 <br/>
+       
+                 <label for="adress" class="payment-label">Adres</label>
+                 <input 
+                    type="text"
+                    id="adress"
+                    name="adress"
+                    placeholder="Adresiniz"
+                    required/>
+
+                  <br/>
+                  <label for="delivery date" class="payment-label">Teslimat Tarihi</label>
+                  <input 
+                    type="date"
+                    min="2022-10-17"
+                    max="2022-10-30"
+                    required/>
+
+               <hr/>
+                 
+                <label for="card" class="payment-label">Kart Numarası</label>
+                <input 
+                    type="text"
+                    id="card"
+                    name="card"
+                    placeholder="Kart Numarası"
+                    minlength="16"
+                    maxlength="16"
+                    required
+                    pattern="[0-9]{16}"/>
+                
+                <br/>
+
+                <label for="expiry" class="payment-label"> Son Kullanma Tarihi</label>
+                <input 
+                    type="text"
+                    id="expiry"
+                    name="expery"
+                    placeholder="01/22"
+                    minlength="5"
+                    maxlength="5"
+                    required/>
+
+                <br/>
+
+                <label for="cvv" class="payment-label">CVV</label>
+                <input 
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="cvv"
+                maxlength="3"
+                minlength="3"
+                pattern="[0-9]{3}"
+                required
+                />
+                <div class="select-payment-item">
+                    <input type="checkbox" id="kvk" name="payment" value="kvk" required/>
+                    <label for="kvk">Aydınlatma etnini okudum</label>
+                  </div>
+                  <div class="select-payment-item">
+                    <input type="checkbox" id="zil" name="payment" value="zil"/>
+                    <label for="zil">Zile Basma</label>
+                  </div>
+                  <div class="select-payment-item">
+                    <input type="checkbox" id="teslimat" name="payment" value="teslimat"/>
+                    <label for="teslimat">Temassiz Teslimat</label>
+                  </div>
+                <hr/>
+                <a href="select-ekstra1.html">Geri</a>
+              <button type="submit" role="button">Ödeme Yap</button>
+        </form>
+
+    </section>
+</body>
+</html>
